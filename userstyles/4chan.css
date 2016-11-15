@@ -1,0 +1,88 @@
+/*  intended for use with dark flat ahoka theme for appchan x   */
+
+/* removes borders and background from the thread area */
+#doc, #threads, .board > .thread {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+/* center posts */
+.replyContainer, .opContainer {
+    margin-left: 16em !important;
+}
+
+/* remove this for showing inline replies */
+.inline > .replyContainer {
+    margin-left: 0em !important;
+}
+
+/* justify post width, add spacing and padding */
+.post {
+    width: 50em !important;
+    margin-bottom: 2em !important;
+    padding: 1em !important;
+}
+
+/* make the OP the same as everything else */
+.opContainer {
+    margin-top: 2em !important;
+ 	background: rgba(35,36,37,.9);
+    width: 50em !important;
+    margin-bottom: 2em !important;
+}
+
+/* do this for the janitor shit at the top */
+#blotter, #breadCrumb {
+   background: rgba(35,36,37,.9); 
+}
+
+/* add a background image */
+body {
+ 	background-image: url(http://i.imgur.com/3qNakJn.jpg);     
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* take out the solid column on the right side */
+.sidebar-normal body {
+    margin: 0;
+}
+
+
+/* misc small fixes */
+.sidebar-location-right.sidebar-normal:not(.pagination-on-side):not(.fourchan-ss-navigation) .pagelist, .sidebar-location-right.sidebar-normal #header-bar {
+ 	right: 0px;   
+}
+
+tbody > tr:nth-of-type(2n+1) {
+ 	background: inherit !important;   
+}
+
+#blotter > thead {
+    display: none !important;
+}
+
+/* top padding for the board banner on the right */
+.boardBanner, #boardTitle {
+ 	margin-top: 3em;   
+}
+
+/* undo the spacing for the catalog */
+.catalog-small {
+    margin-top: 2em;
+    margin-right: 252px;
+}
+
+/* catalog formatting */
+.catalog-thread {
+    background: rgba(35,36,37,.7);
+    padding: 1em !important;
+    height: 17em !important;
+    margin: 1em !important;
+}
+
+/* fix padding on hover posts */
+#hoverUI > #qp > .replyContainer {
+ 	margin-left: 0em !important;   
+}
