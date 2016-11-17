@@ -1,0 +1,143 @@
+/*
+applies to URLS:
+https://google..*
+
+*/
+
+/* custom colors */            
+:root {
+--bg: #1d1e2a !important;                
+--bg2: #1a1b26 !important;                 
+--bg3: #14151f !important;                    
+--main-text: #888 !important;      /* main text */
+--secondary-text: #556B82 !important;        /* blue */
+--third-text: #74857c !important;       /* green */
+}      
+    
+  
+body, html {
+background: var(--bg3) !important;
+background-repeat: repeat !important;
+background-attachment: fixed !important;
+background-position: center center !important;
+margin: auto !important;  
+margin-top: 90px !important;
+}   
+  
+                                                                            /* bg */  
+  
+.hf, .ve, .ej, .Ue, .if, #gbqfqwb, .em, .zj, .Xc, .aWd, .b-c-U, .Ee, .Sb, .z9c, .Bc, .g-h-f-za-Wl .g-h-f-za-yb, .g-h-f-za-Wl, .Kza, .YSKYmf, .bhiYbe, .Dha, .XGb:hover, .MZd, .H8BnBf, .aIb.aIb, .eNd {
+background-color: var(--bg) !important;       
+}  
+  
+.Wm, .Sk, .fr, .WR, .vy, .bS, .Bl, .INc, .Lmb .uoGTZe, .Lde, .Hge, .EZszNc, .VVa, .Ege, .fOa.TVa .SOb, .uoGTZe, .SOb, .b-c-Wa, .aJb, .Ide, .Sb.hd .cc, .bD, .iZd, .XZd, .t-Pa-mb-c.b-c-Ba {
+background-color: var(--bg2) !important;    
+}  
+  
+  
+.Bha .jw, .URc, .Bha, .Gc.esw, .Dg, .wu, .t-Pa-mb-c.b-c-R, .t-Pa-mb-c.b-c-U, .t-Pa-mb-c.b-c-Wa, .USa, .uVd, .N7Ah4, .gb_rf .gb_se, .t3, .Xa, .b-c-R, .es, .yd.b-i, .Rd, .g-h-f-vc-B, .b-c-Ba.b-c-I, .aac, .MNn0h, .b-p {
+background-color: var(--bg3) !important;   
+}  
+
+.g-h-f-za-Wl, .pg, .d273ob {
+background: var(--bg3) !important;   
+}  
+  
+      /* img hover */
+.HQhzCd, .HQhzCd:hover {
+background-color: var(--bg3) !important;   
+width: 100% !important;  
+left: 0 !important;  
+bottom: 0 !important;    
+}  
+  
+.Cy.P4, .Cy:hover, .b-c-R.b-c-da-ja:hover, .TCc .SZd {
+border-color: var(--third-text) !important;        
+}  
+  
+.Be .l7 {
+border-top: 10px solid var(--bg3) !important;            
+} 
+  
+.mB, .g-h-f-za-Wl, .ttc {
+border-color: transparent !important;
+}  
+                                                                        /* txt */
+  
+.Gc.esw, .dn, .oB, .qg, .aC5wef.d-s, .FLEpdd.d-s, .t-Pa-mb-c.b-c-R, .Aq, .OF, .vy, .bS, .tf, .Uc .jkb, .Uc .PSa .d-y-r-c, .Uc .Zmjtc, .USa, .uVd, .fpd, .gbqfif, .gbqfsf, .zj, .Xc, .Kra, .hDc, .b-c-R, .Be .dv, .es, .k1b .d-s, .Sb.hd .pc, .XGb, .TZd, .a1d, .t-Pa-mb-c.b-c-Ba, .XO .d-y-r-c-ha {
+color: var(--main-text) !important;  
+}  
+  
+
+.Ub, .FpFo5e .ot-anchor, .va .FpFo5e .ot-anchor, .HQhzCd:hover, .Cy:hover, .Xi, .Foy5W, .Lkb, .ot-anchor, .Rw5lC {
+color: var(--secondary-text) !important;      
+}  
+  
+  
+.Cr, .Uia .Zka .gca, .Ls .bkb .d-s, .ot-hashtag, .proflink, .ZtGLwd, .Cy.P4, .USa .Hyc, .Zp, .Gc.eswa .tf, .d-s, .o-U-s, .stc, .EB {
+color: var(--third-text) !important;          
+}  
+  
+a, body, .dn, .Uc .jkb, .Uc .PSa .d-y-r-c, .Uc .Zmjtc {
+font-family: "Open Sans Semibold", "Segoe UI" !important;
+font-size: 14px !important;
+  }  
+  
+  
+                                                               /* header */
+  
+.Uc.YJ, .gb_qc, .Uc {
+background-color: var(--bg2) !important;        
+}  
+                                                        /* edit imgs */
+  
+.gr, .iI, span.ewua7e, .t-Pa-mb-c.b-c .t-Pa-mb-Od, .uoNTwd, .UVa, .tn, .dWd, .FD, .kH, .mH, .jH, .TCROWb, .g-h-f-m-Ef, .g-h-f-m-bd, .g-h-f-Qm, .gb_Rb, .yea, .RY {
+filter: invert(100%) !important;
+}  
+  
+span.ewua7e, .gb_Sb, .Be .lH, .eS, .JI, .hL, .iL, .gL, .M9W4jb, .Gc.eswa .gr {
+filter: grayscale(100%) !important;    
+  }  
+  
+.t-Pa-mb-c.b-c-U, .t-Pa-mb-c.b-c-Wa {
+padding: 5px !important;
+}  
+  
+.Xa {
+padding: 10px !important;    
+}  
+  
+.z0b {
+padding: 0px !important;        
+}  
+  
+.VVa {
+background-image: url("https://puu.sh/qaiWz/846962a629.png") !important;
+}  
+  
+                                                          /* remove shit */  
+  
+  
+.hf, .Ee, .ve, .Gc.esw, .Dg, .wu, .FpFo5e > .gi, .Wm, .Sk, .Ue, .t-Pa-mb-c.b-c-R, .fr > .vt, .N7Ah4, .Mde, .Mj > .gi, .Bn .Xzc, .WC > .gi, .Sb, .es, .iH, .b-hb, .Ide, .Rd, .g-h-f-vc-B, #gbsfw.gb_tc, .g0d, .UCc, .QZb, .VD > .UD, .b-p, .t-Pa-mb-c.b-c-Ba, .kp-blk .xpdclose ._wle, .kp-blk .xpdopen ._xle {
+border: none !important;
+}  
+  
+.Bl, .W0Vccc, #gbqfb, .em::before, .eg, .gEc {
+display: none !important;  
+}  
+    
+.HQhzCd {
+text-decoration: none !important;
+}  
+  
+.hf, .ys, .ve {
+border-radius: 0px !important;    
+}    
+  
+.Lde, .Nde, .Ode, .ys {
+margin: 0px !important;  
+}  
+  
+.fOa.TVa .SOb, .b-p {
+box-shadow: none !important;
+}
