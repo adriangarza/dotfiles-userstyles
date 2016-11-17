@@ -1,5 +1,10 @@
 /*  intended for use with dark flat ahoka theme for appchan x   */
 
+body, textarea, input {
+	font-family: "Open Sans" !important;
+	font-weight: 500 !important;
+}
+
 /* removes borders and background from the thread area */
 #doc, #threads, .board > .thread {
     background: rgba(0, 0, 0, 0);
@@ -26,15 +31,10 @@
 /* make the OP the same as everything else */
 .opContainer {
     margin-top: 2em !important;
- 	background: rgba(35,36,37,.9);
     width: 50em !important;
     margin-bottom: 2em !important;
 }
 
-/* do this for the janitor shit at the top */
-#blotter, #breadCrumb {
-   background: rgba(35,36,37,.9); 
-}
 
 /* add a background image */
 body {
@@ -85,4 +85,48 @@ tbody > tr:nth-of-type(2n+1) {
 /* fix padding on hover posts */
 #hoverUI > #qp > .replyContainer {
  	margin-left: 0em !important;   
+}
+
+#blotter, body>.center {
+	display: none !important;	
+}
+
+#delform {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+
+.post, #blotter, #breadCrumb {
+	background-color: rgba(21, 22, 24, .7) !important;	
+}
+
+/*minimize :^) */
+.fileText {
+	display: none;	
+}
+
+.post {
+	border: 2px solid rgba(0, 0, 0, 0) !important;
+	border-radius: 2px;
+	transition: border .4s ease;
+}
+
+.post:hover {
+	border-bottom: 2px solid dodgerblue !important;	
+}
+
+.dialog {
+	background: none !important;	
+}
+
+/* hover-created replies */
+#qp>.postContainer>.post {
+	margin-bottom: 0px !important;
+	box-shadow: none !important;
+	background-color: rgba(21, 22, 24, .95) !important;					
+}
+
+#header-bar {
+	background-color: rgba(21, 22, 24, .95) !important;	
 }
