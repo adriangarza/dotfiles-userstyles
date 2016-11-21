@@ -116,3 +116,8 @@ a {
 	color: #74857c !important;
     opacity: .6 !important;
 }
+
+/*color conversation name */
+span._2jnv {
+	color: gray !Important;	
+}
