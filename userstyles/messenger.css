@@ -119,5 +119,10 @@ a {
 
 /*color conversation name */
 span._2jnv {
-	color: gray !Important;	
+	color: gray !important;	
+}
+
+/*because people won't stop playing pac-man*/
+div._497p {
+	color: gray !important;	
 }
