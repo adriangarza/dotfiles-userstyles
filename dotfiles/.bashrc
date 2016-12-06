@@ -111,3 +111,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cd..='cd ..'
+
+mkcdir() {
+	mkdir -p -- "$1" &&
+	cd -P -- "$1"
+}
