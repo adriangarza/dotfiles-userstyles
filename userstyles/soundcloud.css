@@ -326,3 +326,7 @@
  	background: none !important;
     border: none !important;
 }
+
+.playControls__bg {
+	display: none !important;
+}
