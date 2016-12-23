@@ -1,8 +1,8 @@
 /*  intended for use with dark flat ahoka theme for appchan x   */
 
 body, textarea, input {
-	font-family: "Open Sans" !important;
-	font-weight: 500 !important;
+    font-family: "Open Sans" !important;
+    font-weight: 500 !important;
 }
 
 /* removes borders and background from the thread area */
@@ -38,7 +38,7 @@ body, textarea, input {
 
 /* add a background image */
 body {
- 	background-image: url(http://i.imgur.com/3qNakJn.jpg);     
+    background-image: url(http://i.imgur.com/3qNakJn.jpg);     
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -52,11 +52,11 @@ body {
 
 /* misc small fixes */
 .sidebar-location-right.sidebar-normal:not(.pagination-on-side):not(.fourchan-ss-navigation) .pagelist, .sidebar-location-right.sidebar-normal #header-bar {
- 	right: 0px;   
+    right: 0px;   
 }
 
 tbody > tr:nth-of-type(2n+1) {
- 	background: inherit !important;   
+    background: inherit !important;   
 }
 
 #blotter > thead {
@@ -65,7 +65,7 @@ tbody > tr:nth-of-type(2n+1) {
 
 /* top padding for the board banner on the right */
 .boardBanner, #boardTitle {
- 	margin-top: 3em;   
+    margin-top: 3em;   
 }
 
 /* undo the spacing for the catalog */
@@ -84,49 +84,53 @@ tbody > tr:nth-of-type(2n+1) {
 
 /* fix padding on hover posts */
 #hoverUI > #qp > .replyContainer {
- 	margin-left: 0em !important;   
+    margin-left: 0em !important;   
 }
 
 #blotter, body>.center {
-	display: none !important;	
+    display: none !important;   
 }
 
 #delform {
-	background: none !important;
-	box-shadow: none !important;
+    background: none !important;
+    box-shadow: none !important;
 }
 
 
 .post, #blotter, #breadCrumb {
-	background-color: rgba(21, 22, 24, .7) !important;	
+    background-color: rgba(21, 22, 24, .7) !important;  
 }
 
 /*minimize :^) */
 .fileText {
-	display: none;	
+    display: none;  
 }
 
 .post {
-	border: 2px solid rgba(0, 0, 0, 0) !important;
-	border-radius: 2px;
-	transition: border .4s ease;
+    border: 2px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 2px;
+    transition: border .4s ease;
 }
 
 .post:hover {
-	border-bottom: 2px solid dodgerblue !important;	
+    border-bottom: 2px solid dodgerblue !important; 
 }
 
 .dialog {
-	background: none !important;	
+    background: none !important;    
 }
 
 /* hover-created replies */
 #qp>.postContainer>.post {
-	margin-bottom: 0px !important;
-	box-shadow: none !important;
-	background-color: rgba(21, 22, 24, .95) !important;					
+    margin-bottom: 0px !important;
+    box-shadow: none !important;
+    background-color: rgba(21, 22, 24, .95) !important;                 
 }
 
 #header-bar {
-	background-color: rgba(21, 22, 24, .95) !important;	
+    background-color: rgba(21, 22, 24, .95) !important; 
+}
+
+#thread-watcher.dialog {
+    background-color: rgba(21, 22, 24, .95) !important; 
 }
