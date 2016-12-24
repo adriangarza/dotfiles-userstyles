@@ -1929,7 +1929,7 @@ core-header-panel#nav-container #nav {
 
 /* for background wallpaper */
 body, body.material, #music-content {
-	background-image: url(https://i.imgur.com/O2RZkig.jpg) !important;
+    background-image: url(https://i.imgur.com/O2RZkig.jpg) !important;
         background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -1950,11 +1950,11 @@ body, body.material, #music-content {
 
 /*making shuffle and loop buttons light up */
 .paper-icon-button {
-	color: inherit !important;
+    color: inherit !important;
 }
 
 #player-bar-play-pause>iron-icon {
- 	color: #297FC2 !important; 
+    color: #297FC2 !important; 
 }
 
 .material .song-row.selected-song-row td, .material .song-row.currently-playing td {
@@ -1962,17 +1962,21 @@ body, body.material, #music-content {
 }
 
 .tab-content, #countSummary, #action-bar-container {
- 	color: white !important;   
+    color: white !important;   
 }
 
 .music-logo {
- 	display: none;   
+    display: none;   
 }
 
 #searchIcon>svg {
- 	color: black !important;   
+    color: black !important;   
 }
 /* remove little white border from top blue bar */
 paper-header-panel#content-container:not([style-scope]):not(.style-scope):not(.transparent)[at-top] paper-toolbar#material-app-bar {
     border-bottom: none !important;
+}
+
+.sj-search-box-0 {
+    background-color: inherit !important;   
 }
