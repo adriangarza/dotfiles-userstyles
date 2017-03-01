@@ -1,0 +1,174 @@
+/*ads loaded but hidden, everyone's happy */
+
+.image-ad {
+	display: none;
+}
+div#right_column,
+ul.sidebar_nav {
+	display: none;
+}
+div#left_column {
+	position: absolute;
+	background-color: transparent !important;
+}
+/*
+div#left_column{
+    left: 50%;
+    transform: translate(-50%);
+}
+*/
+
+.post_avatar_link,
+.post.post_full {
+	border-radius: 3px !important;
+	background: #111;
+}
+.post_avatar {
+	background: transparent;
+}
+.post_avatar {
+	border-radius: 50% !important;
+}
+.post,
+.post-source-footer {
+	background: #111;
+}
+.post.post_full {
+	border: 0px solid #fff;
+}
+.l-header-container--refresh {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .7);
+	background: rgba(33, 33, 33, .9);
+}
+.identity {
+	background: transparent;
+	background-image: url(http://i.imgur.com/v5GUL1B.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	opacity: .99;
+	background-color: #0a0a0a;
+}
+.tab_notice {
+	background: #fff !important;
+}
+.tab-notice--outlined {
+	border: 2px solid #444 !important;
+}
+.compose-button {
+	fill: #fff;
+}
+.ui_search {
+	background: trasparent;
+}
+#search_query {
+	background: rgba(0, 0, 0, .3);
+}
+div.post_tags.nowrap.draggable:after {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #111 100%) !important;
+}
+div.post_tags.nowrap.draggable:before {
+	background: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 0, #111) !important;
+}
+.post-source-footer {
+	background: #111 !important;
+}
+.reblog-list {
+	border-top: 1px solid #000;
+}
+div.post_tags.nowrap::after {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #111 100%) !important;
+}
+.follow-text {
+	color: #fff !important;
+}
+i.icon_post_text,
+i.icon_post_photo,
+i.icon_post_quote,
+i.icon_post_link,
+i.icon_post_chat,
+i.icon_post_audio,
+i.icon_post_video {
+	color: #fff !important;
+}
+p.asker,
+span.name {
+	color: #111 !important;
+}
+div.text p {
+	color: #111 !important;
+}
+a.recommendation-reason-link {
+	color: #eee !important;
+}
+p.tmblr-attribution {
+	color: #aaa !important;
+	background-color: #0d0d0d !important;
+}
+.post_permalink {
+	border-color: #f22 #f22 transparent transparent !important;
+}
+div.rapid-recs {
+	background-image: linear-gradient(180deg, rgba(54, 70, 93, 0) 0, #111 15%, #111 85%, rgba(54, 70, 93, 0)) !important;
+}
+a.post_control.post_control-icon.reblog.reblogged::before {
+	color: #f22 !important;
+}
+.post_controls .post_control.reblog.reblogged:before,
+.post_controls .post_control.like.liked:before {
+	color: #f22;
+}
+.ui_peepr_glass {
+	background-color: rgba(0, 0, 0, .90);
+}
+.identity .controls_section.user_list li .follow_list_item_blog:before {
+	background-image: linear-gradient(90deg, rgba(54, 70, 93, 0), #111) !important;
+	border-right: 5px solid #111 !important;
+}
+.reblog-list-item {
+	border-bottom: 1px solid #000;
+}
+.reblog-title,
+.post-title,
+.reblog-content,
+.post_body,
+.post_info_link {
+	color: gray !important;
+	font-family: 'Open Sans' !important;
+	font-weight: 600;
+}
+.post_tag,
+.note_link_current,
+.follow-text {
+	color: rgb(50, 50, 50) !important;
+}
+.post {
+	font-family: 'Open Sans' !important;
+	font-weight: 600;
+}
+.note_item {
+	background: none !important;
+	border: 1px solid dimgray !important;
+}
+.note-item > text > *,
+.name,
+.asker > span {
+	color: gray !important;
+}
+.text >:last-child {
+	color: lightgray !important;
+}
+.nipple {
+	opacity: 0;
+}
+
+/*post responses; rare */
+.text_field {
+	background-color: #111 !important;
+	color: gray !important;
+	border-color: dimgray !important;
+}
+.post_answer_form_field:before,
+.post_answer_form_field:after {
+	display: none !important;	
+}

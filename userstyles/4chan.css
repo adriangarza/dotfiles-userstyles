@@ -1,8 +1,8 @@
 /*  intended for use with dark flat ahoka theme for appchan x   */
 
 body, textarea, input {
-    font-family: "Open Sans" !important;
-    font-weight: 500 !important;
+	font-family: "Open Sans" !important;
+	font-weight: 500 !important;
 }
 
 /* removes borders and background from the thread area */
@@ -28,6 +28,10 @@ body, textarea, input {
     padding: 1em !important;
 }
 
+#breadCrumb {
+	background: none !important;	
+}
+
 /* make the OP the same as everything else */
 .opContainer {
     margin-top: 2em !important;
@@ -38,7 +42,7 @@ body, textarea, input {
 
 /* add a background image */
 body {
-    background-image: url(http://i.imgur.com/3qNakJn.jpg);     
+ 	background-image: url(http://i.imgur.com/FTdHELz.jpg);     
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -52,11 +56,11 @@ body {
 
 /* misc small fixes */
 .sidebar-location-right.sidebar-normal:not(.pagination-on-side):not(.fourchan-ss-navigation) .pagelist, .sidebar-location-right.sidebar-normal #header-bar {
-    right: 0px;   
+ 	right: 0px;   
 }
 
 tbody > tr:nth-of-type(2n+1) {
-    background: inherit !important;   
+ 	background: inherit !important;   
 }
 
 #blotter > thead {
@@ -65,7 +69,7 @@ tbody > tr:nth-of-type(2n+1) {
 
 /* top padding for the board banner on the right */
 .boardBanner, #boardTitle {
-    margin-top: 3em;   
+ 	margin-top: 3em;   
 }
 
 /* undo the spacing for the catalog */
@@ -84,53 +88,108 @@ tbody > tr:nth-of-type(2n+1) {
 
 /* fix padding on hover posts */
 #hoverUI > #qp > .replyContainer {
-    margin-left: 0em !important;   
+ 	margin-left: 0em !important;   
 }
 
 #blotter, body>.center {
-    display: none !important;   
+	display: none !important;	
 }
 
 #delform {
-    background: none !important;
-    box-shadow: none !important;
+	background: none !important;
+	box-shadow: none !important;
 }
 
+/* try to make the OP consistent because it's structured weirdly */
+.post:not(.op), #blotter {
+	background-color: rgba(21, 22, 24, .9) !important;	
+}
 
-.post, #blotter, #breadCrumb {
-    background-color: rgba(21, 22, 24, .7) !important;  
+.op>.postMessage {
+	background-color: rgba(21, 22, 24, .9) !important;
+	padding: 1em !important;
+	width: 48em !important;
+	margin-left: 16em !important;
+}
+
+.postInfo {
+	width: 66em !important;	
+}
+
+.postContainer {
+	clear: both !important;	
 }
 
 /*minimize :^) */
 .fileText {
-    display: none;  
+	opacity: 0;	
+	transition: .1s ease;
+}
+
+.fileText:hover {
+	opacity: 1;	
 }
 
 .post {
-    border: 2px solid rgba(0, 0, 0, 0) !important;
-    border-radius: 2px;
-    transition: border .4s ease;
+	border: 2px solid rgba(0, 0, 0, 0) !important;
+	border-radius: 2px;
+	transition: .4s ease;
 }
 
 .post:hover {
-    border-bottom: 2px solid dodgerblue !important; 
+	border-bottom: 2px solid dodgerblue !important;
 }
 
 .dialog {
-    background: none !important;    
+	background: none !important;	
 }
 
 /* hover-created replies */
 #qp>.postContainer>.post {
-    margin-bottom: 0px !important;
-    box-shadow: none !important;
-    background-color: rgba(21, 22, 24, .95) !important;                 
+	margin-bottom: 0px !important;
+	box-shadow: none !important;
+	background-color: rgba(21, 22, 24, .95) !important;					
 }
 
 #header-bar {
-    background-color: rgba(21, 22, 24, .95) !important; 
+	background-color: rgba(21, 22, 24, .95) !important;	
 }
 
 #thread-watcher.dialog {
-    background-color: rgba(21, 22, 24, .95) !important; 
+	background-color: rgba(21, 22, 24, .95) !important;	
+}
+
+hr {
+	border: none !important;	
+}
+
+/* list of boards on the top left */
+#header-bar {
+	background-color: rgba(0, 0, 0, 0) !important;
+	border: none !important;
+	transition: .2s ease;
+}
+
+#header-bar:hover {
+	background-color: rgba(0, 0, 0, .9) !important;	
+}
+
+#custom-board-list {
+	cursor: default !important;	
+}
+
+#custom-board-list>a {
+	color: white !important;
+	opacity: .5;
+	transition: .2s ease;
+}
+
+#custom-board-list>a:hover {
+	opacity: 1;
+	color: white !important;
+}
+
+a, .quotelink {
+	transition: color .2s ease;
+	text-decoration: none !important;
 }

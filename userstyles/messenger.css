@@ -1,16 +1,11 @@
 /* main */
 li._54ni:hover, ._2i-c ._54ne ._54nh, ._2i-c ._54ne ._54nc, ._2i-c ._54ne, ._4_j4 {
     background: #1d1e2a !important;
-    opacity: .95;
+    opacity: 1;
     
   }
 
-._4rv3 {
--webkit-box-shadow: 0px -5px 133px -7px rgba(0,115,255,0.51);
--moz-box-shadow: 0px -5px 133px -7px rgba(0,115,255,0.51);
-box-shadow: 0px -5px 133px -7px rgba(0,115,255,0.51);
-    
-}
+
   
 /* side */
 ._4_j5, ._1ht1 {
@@ -24,7 +19,7 @@ box-shadow: 0px -5px 133px -7px rgba(0,115,255,0.51);
   }       
   
 ._4sp8, body {
-    background: url("http://imgur.com/ppmuI2I.jpg") !important;
+    background: url("http://i.imgur.com/HGZQCV9.jpg") !important;
   background-color: #1d1e2a !important;
   }  
   
@@ -44,8 +39,7 @@ a, ._36ic ._1tqi, ._1ht6, ._2i-c ._54ni, ._3i_m ._2her, ._3eus {
   }  
   
 a, body, ._2v6o, h4._497p, ._5iwm ._58al {
-    font-family: Open Sans !important;
-    font-weight: 500 !important;
+	/* the box shadow would go here */
   } 
 
 ._1q5-, ._1ht2 ._2poo {
@@ -94,17 +88,23 @@ a {
     text-decoration: none !important;
 }
 
-/* no purpose except for screenshots to hide most things for privacy   
+
+._5742, ._36ic {
+	opacity: .6 !important;	
+}
+
+/* no purpose except for screenshots to hide most things for privacy */
+/*
 ._17w2, ._1ht6, ._2i-c ._54nf ._54nh, ._3x6v, a, ._36ic ._1tqi, ._1ht6, ._2i-c ._54ni, ._3i_m ._2her, ._3eus, ._2v6o, h4._497p, ._1lj0, ._1htf, ._3szq, a:hover, li._5l-3:nth-child(1) > div, ._1t_q ._1t_r, ._1t_q ._4ldz, ._1t_q ._4ld-, ._1t_q ._4ld- img, ._3eur > span, ._1jt8, ._4jzq {
   opacity: 0 !important;
   }
- */
+ /**/
 
 
 /*coloring username text */
 ._ih3>._3oh->span {
  	color: #74857c !important;
-    opacity: .4 !important;
+    opacity: .5 !important;
 }
 
 ._4rpj, ._364g, ._2jnv>spanm ._58al {
@@ -119,10 +119,18 @@ a {
 
 /*color conversation name */
 span._2jnv {
-	color: gray !important;	
+	color: gray !Important;	
 }
 
-/*because people won't stop playing pac-man*/
-div._497p {
+/*polls */
+._30h->span>div>span>span, ._30h-,
+._497p, h5._ih3,
+._3b4u, ._3b4v, ._3b4f,
+._2m5p>span, ._1mq->span>span, ._1mr_>span>span{
 	color: gray !important;	
+	border-color: gray !important;
+}
+
+._53ij {
+	background-color: #1d1e2a !important;	
 }
