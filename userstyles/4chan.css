@@ -1,11 +1,11 @@
-/*  intended for use with dark flat ahoka theme for appchan x   */
+/*  intended for use with dark flat ahoka threme for appchan x   */
 
 body, textarea, input {
 	font-family: "Open Sans" !important;
 	font-weight: 500 !important;
 }
 
-/* removes borders and background from the thread area */
+/* rremoves borders and background from the thread area */
 #doc, #threads, .board > .thread {
     background: rgba(0, 0, 0, 0);
     border: none;
@@ -13,19 +13,18 @@ body, textarea, input {
 
 /* center posts */
 .replyContainer, .opContainer {
-    margin-left: 16em !important;
+    margin-left: 16rem !important;
 }
 
-/* remove this for showing inline replies */
+/* rremove this for showing inline replies */
 .inline > .replyContainer {
-    margin-left: 0em !important;
+    margin-left: 0rem !important;
 }
 
 /* justify post width, add spacing and padding */
-.post {
-    width: 50em !important;
-    margin-bottom: 2em !important;
-    padding: 1em !important;
+.post:not(.op) {
+    margin-bottom: 2rem !important;
+    padding: 1rem !important;
 }
 
 #breadCrumb {
@@ -34,9 +33,9 @@ body, textarea, input {
 
 /* make the OP the same as everything else */
 .opContainer {
-    margin-top: 2em !important;
-    width: 50em !important;
-    margin-bottom: 2em !important;
+    margin-top: 2rem !important;
+    width: 50rem !important;
+    margin-bottom: 2rem !important;
 }
 
 
@@ -69,26 +68,26 @@ tbody > tr:nth-of-type(2n+1) {
 
 /* top padding for the board banner on the right */
 .boardBanner, #boardTitle {
- 	margin-top: 3em;   
+ 	margin-top: 3rem;   
 }
 
 /* undo the spacing for the catalog */
 .catalog-small {
-    margin-top: 2em;
+    margin-top: 2rem;
     margin-right: 252px;
 }
 
 /* catalog formatting */
 .catalog-thread {
     background: rgba(35,36,37,.7);
-    padding: 1em !important;
-    height: 17em !important;
-    margin: 1em !important;
+    padding: 1rem !important;
+    height: 17rem !important;
+    margin: 1rem !important;
 }
 
 /* fix padding on hover posts */
 #hoverUI > #qp > .replyContainer {
- 	margin-left: 0em !important;   
+ 	margin-left: 0rem !important;   
 }
 
 #blotter, body>.center {
@@ -107,17 +106,12 @@ tbody > tr:nth-of-type(2n+1) {
 
 .op>.postMessage {
 	background-color: rgba(21, 22, 24, .9) !important;
-	padding: 1em !important;
-	width: 48em !important;
-	margin-left: 16em !important;
+	padding: 2rem !important;
+	margin-left: 0px;
 }
 
 .postInfo {
-	width: 66em !important;	
-}
-
-.postContainer {
-	clear: both !important;	
+	width: 66rem !important;	
 }
 
 /*minimize :^) */
@@ -185,11 +179,41 @@ hr {
 }
 
 #custom-board-list>a:hover {
-	opacity: 1;
+	opacity: .8;
 	color: white !important;
 }
 
 a, .quotelink {
 	transition: color .2s ease;
 	text-decoration: none !important;
+}
+
+@media(min-width: 1000px) {
+	.post:not(.op) {
+		width: 50rem !important;									
+	}
+	
+	.op>.postMessage {
+	width: 46rem !important;
+}
+}
+
+/* muh responsive */
+@media(max-width: 1000px) {
+	.boardBanner, #boardTitle {
+		display: none !important;										
+	}
+	.postContainer, .post {
+		margin: auto !important;
+		width: 90% !important;
+	}
+	.op>.postMessage {
+	background-color: rgba(21, 22, 24, .9) !important;
+	padding: 2rem !important;
+	width: 90%!important;
+	margin-left: 0px;
+	}
+	.opContainer {
+		margin-bottom: 2em !important;										
+	}
 }
