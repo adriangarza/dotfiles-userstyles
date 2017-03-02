@@ -5,7 +5,7 @@ body, textarea, input {
 	font-weight: 500 !important;
 }
 
-/* rremoves borders and background from the thread area */
+/* removes borders and background from the thread area */
 #doc, #threads, .board > .thread {
     background: rgba(0, 0, 0, 0);
     border: none;
@@ -207,6 +207,9 @@ a, .quotelink {
 		margin: auto !important;
 		width: 90% !important;
 	}
+	body {
+		overflow-x: hidden;										
+	}
 	.op>.postMessage {
 	background-color: rgba(21, 22, 24, .9) !important;
 	padding: 2rem !important;
@@ -216,4 +219,11 @@ a, .quotelink {
 	.opContainer {
 		margin-bottom: 2em !important;										
 	}
+}
+
+/*fix the OP weirdness in chrome */
+blockquote.postMessage {
+	-webkit-margin-before: 0 !Important;
+	-webkit-margin-after: 0 !Important;
+	margin-right: -20px !important;
 }
