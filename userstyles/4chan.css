@@ -188,7 +188,7 @@ a, .quotelink {
 	text-decoration: none !important;
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 80rem) {
 	.post:not(.op) {
 		width: 50rem !important;									
 	}
@@ -199,7 +199,7 @@ a, .quotelink {
 }
 
 /* muh responsive */
-@media(max-width: 1000px) {
+@media(max-width: 80rem) {
 	.boardBanner, #boardTitle {
 		display: none !important;										
 	}
