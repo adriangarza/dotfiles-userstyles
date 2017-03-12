@@ -22,8 +22,12 @@ brackets-wrap::after {
 .brackets-wrap::after {
 	content: "" !important;
 }
-/* style links */
 
+.dialog {
+	border: none;
+}
+
+/* style links */
 a,
 a:visited {
 	text-decoration: none !important;
@@ -298,4 +302,51 @@ input[class="field"]:focus {
 }
 .reply-to-thread {
 	border: none !important;
+}
+
+/* 4chanx settings box ================================================ */
+/* remove underline from label */
+label{
+	text-decoration: none !important;
+}
+
+/* add spacing between option lines */
+#fourchanx-settings>.section-container>.section-main>fieldset>div, 
+#fourchanx-settings>.section-container>.section-main>fieldset>div>.suboption-list{
+	margin-top: .5rem;
+}
+
+/* remove tree style lines */
+:root.tomorrow #fourchanx-settings fieldset, :root.tomorrow .section-main div::before {
+	border: none;	
+}
+
+/* make the navbar at the top larger, add a shadow */
+#fourchanx-settings>nav {
+	height: 16pt;
+	padding: 3px;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*gradient bar */
+#fourchanx-settings:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(to left, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	top: -10px;
+	left: 0;
+}
+
+/* fix some spacing */
+#fourchanx-settings {
+	border: none;
+	padding: 0;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .5);
+}
+
+/* edit weird box shadow interference */
+:root.tomorrow .suboption-list > div:last-of-type {
+	background-color: transparent;	
 }
