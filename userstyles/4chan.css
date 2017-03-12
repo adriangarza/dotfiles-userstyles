@@ -1,229 +1,282 @@
-/*  intended for use with dark flat ahoka threme for appchan x   */
-
-body, textarea, input {
-	font-family: "Open Sans" !important;
-	font-weight: 500 !important;
-}
-
-/* removes borders and background from the thread area */
-#doc, #threads, .board > .thread {
-    background: rgba(0, 0, 0, 0);
-    border: none;
-}
-
-/* center posts */
-.replyContainer, .opContainer {
-    margin-left: 16rem !important;
-}
-
-/* rremove this for showing inline replies */
-.inline > .replyContainer {
-    margin-left: 0rem !important;
-}
-
-/* justify post width, add spacing and padding */
-.post:not(.op) {
-    margin-bottom: 2rem !important;
-    padding: 1rem !important;
-}
-
-#breadCrumb {
-	background: none !important;	
-}
-
-/* make the OP the same as everything else */
-.opContainer {
-    margin-top: 2rem !important;
-    width: 50rem !important;
-    margin-bottom: 2rem !important;
-}
-
-
-/* add a background image */
+/*  MENU/MISC SITEWIDE STYLING */
 body {
- 	background-image: url(http://i.imgur.com/FTdHELz.jpg);     
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+	font-family: 'Open Sans' !important;
+	background-image: url("http://i.imgur.com/SynGRvw.jpg");
+	background-attachment: fixed;
 }
 
-/* take out the solid column on the right side */
-.sidebar-normal body {
-    margin: 0;
+select, input {
+	background-color: #333 !important;
+	margin: 0px 5px;
+	color: #ccc !important;
+	outline: none !important;
+	border: none !important;
 }
 
-
-/* misc small fixes */
-.sidebar-location-right.sidebar-normal:not(.pagination-on-side):not(.fourchan-ss-navigation) .pagelist, .sidebar-location-right.sidebar-normal #header-bar {
- 	right: 0px;   
+.brackets-wrap::before, brackets-wrap::after {
+	content: "" !important;
 }
 
-tbody > tr:nth-of-type(2n+1) {
- 	background: inherit !important;   
+.brackets-wrap::after {
+	content: "" !important;
 }
 
-#blotter > thead {
-    display: none !important;
+/* style links */
+a, a:visited {
+	text-decoration: none !important;
+	color: #ccc !important;
+	transition-property: color .2s;
+}
+.quotelink {
+	text-decoration: none !important;
+	transition: .2s !important;
+	color: #ee609c !important;	
+
+}
+a:not(.catalog-link):hover, .quotelink:hover {
+	color: white !important;
 }
 
-/* top padding for the board banner on the right */
-.boardBanner, #boardTitle {
- 	margin-top: 3rem;   
+#thread-watcher {
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+	padding: 10px;
+	border: none;
 }
 
-/* undo the spacing for the catalog */
-.catalog-small {
-    margin-top: 2rem;
-    margin-right: 252px;
+/* add a pretty gradient to the top of the thread watcher */
+#thread-watcher>.move:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:10px;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	top:-10px;
+    left:0;	
 }
 
-/* catalog formatting */
+div.boardTitle {
+	color: #2b2b2d;
+	text-shadow: none !important;
+	font-family: "Open Sans" !important;
+	font-weight: 600 !important;
+}
+
+/*CATALOG STYLING =============================================*/
+
+.navLinks>span:not(#index-options) {
+	background-color: #333 !important;
+	padding: 10px !important;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+#index-options>select {
+	margin-right: 10px;
+	padding: 10px;
+	transform: translateY(-10px);
+	border-radius: 3px;
+}
+
+#index-search {
+	display: none;	
+}
+
+/* remove update messages */
+/* remove original post starter link */
+#blotter,
+#togglePostFormLink{
+	display: none;
+}
+
+/* style the top menu */
+#ctrl, .navLinks {
+	padding: 1rem 5rem;
+}
+
+/* remove horizontal rules */
+hr {
+	border-top: none;	
+}
+
+/* remove catalog options checkbox */
+#index-options>input[type="checkbox"] {
+	display: none;
+}
+
+/* style post containers */
 .catalog-thread {
-    background: rgba(35,36,37,.7);
-    padding: 1rem !important;
-    height: 17rem !important;
-    margin: 1rem !important;
+	margin: 1rem !important;
+	text-align: left !important;
+	background-color: #2b2b2d !important;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+	transition: .2s;
+	border: none;
+	border-bottom: 10px solid transparent !important;
 }
 
-/* fix padding on hover posts */
-#hoverUI > #qp > .replyContainer {
- 	margin-left: 0rem !important;   
+.catalog-thread:hover {
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+	
 }
 
-#blotter, body>.center {
+.catalog-container {
+	margin: 1rem !important;
+}
+
+/* THREAD STYLING */
+
+/* nobody cares about 4chan passes and legal text */
+.absBotText, .n-pu {
 	display: none !important;	
 }
 
-#delform {
-	background: none !important;
-	box-shadow: none !important;
+/*style the OP =============================================*/
+
+.thread {
+	margin-top: 5rem !important;	
 }
 
-/* try to make the OP consistent because it's structured weirdly */
-.post:not(.op), #blotter {
-	background-color: rgba(21, 22, 24, .9) !important;	
+/* add a gradient bar */
+.opContainer:before {
+	content:'';
+    position:absolute;
+    width:50vw;
+    height:16px;
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
 
-.op>.postMessage {
-	background-color: rgba(21, 22, 24, .9) !important;
-	padding: 2rem !important;
-	margin-left: 0px;
+.subject {
+	color: #b465da !important;	
 }
 
-.postInfo {
-	width: 66rem !important;	
+/* style the replies ======================================== */
+
+/* minimize thread info */
+.postInfo>input[type="checkbox"], .dateTime,
+.hide-reply-button, .navLinksBot, .is_thread>.navLinks {
+	display: none;	
 }
 
-/*minimize :^) */
+/* hide file info unless hovered */
 .fileText {
-	opacity: 0;	
-	transition: .1s ease;
+	opacity: 0;
+	transition: .2s;
 }
-
 .fileText:hover {
 	opacity: 1;	
 }
 
+/* change the "reply to thread" button at the top, now hidden */
+
+/* uncomment this to show */
+.qr-link-container {
+	display: none;	
+}
+
+.qr-link {
+	background: #2b2b2d !important;
+	border: none;
+	transition: .1s;
+}
+.qr-link:hover {
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+.qr-link:active {
+	background-color: #b465da !important;
+}
+
+/* center and standardize the posts========================== */
+@media(min-width: 1500px) {
+	.postContainer {
+	width: 50vw;
+	margin: auto;
+	margin-bottom: 2rem;
+	}
+}
+
+@media(max-width: 1500px) {
+	.postContainer {
+	width: 90vw;
+	margin: auto;
+	margin-bottom: 2rem;
+	}
+}
+
+
+/* style all of em */
 .post {
-	border: 2px solid rgba(0, 0, 0, 0) !important;
+	background-color: transparent !important;
+	border: none !important;
+	padding: 1rem !important;
+}
+
+.postContainer {
+	background-color: #2b2b2d;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+	transition: .2s;
 	border-radius: 2px;
-	transition: .4s ease;
 }
 
-.post:hover {
-	border-bottom: 2px solid dodgerblue !important;
+/* fix weirdness with 4chanx hover posts */
+.qphl {
+	outline: none !important;	
 }
-
-.dialog {
-	background: none !important;	
-}
-
-/* hover-created replies */
-#qp>.postContainer>.post {
-	margin-bottom: 0px !important;
-	box-shadow: none !important;
-	background-color: rgba(21, 22, 24, .95) !important;					
-}
-
-#header-bar {
-	background-color: rgba(21, 22, 24, .95) !important;	
-}
-
-#thread-watcher.dialog {
-	background-color: rgba(21, 22, 24, .95) !important;	
-}
-
-hr {
+#qp, .inline, .inline>.postContainer {
 	border: none !important;	
 }
-
-/* list of boards on the top left */
-#header-bar {
-	background-color: rgba(0, 0, 0, 0) !important;
-	border: none !important;
-	transition: .2s ease;
+#qp>.postContainer, .inline>.postContainer {
+	margin-bottom: 0px !important;
+	max-width: 25vw !important;
+	min-width: 300px;
 }
 
-#header-bar:hover {
-	background-color: rgba(0, 0, 0, .9) !important;	
+/* add another gradient bar on top of the hover post */
+#qp>.postContainer:before {
+	content:'';
+    position:absolute;
+    width:10px;
+    height:100%;
+	background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
-#custom-board-list {
-	cursor: default !important;	
+#qp>.postContainer {
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.4);	
 }
 
-#custom-board-list>a {
-	color: white !important;
-	opacity: .5;
-	transition: .2s ease;
+
+/* hide bottom options except on hover */
+.bottomCtrl {
+	opacity: 0;
+	transition: .2s;
 }
 
-#custom-board-list>a:hover {
-	opacity: .8;
-	color: white !important;
+.bottomCtrl:hover {
+	opacity: 1;	
 }
 
-a, .quotelink {
-	transition: color .2s ease;
-	text-decoration: none !important;
+/* fix posts in catalog =================================== */
+.catalog-thread>.postContainer {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+	width: 100% !important;
 }
 
-@media(min-width: 1000px) {
-	.post:not(.op) {
-		width: 50rem !important;									
-	}
-	
-	.op>.postMessage {
-	width: 46rem !important;
-}
+.catalog-post {
+	margin: 0 !important;
+	top: 0px !important;
 }
 
-/* muh responsive */
-@media(max-width: 1000px) {
-	.boardBanner, #boardTitle {
-		display: none !important;										
-	}
-	.postContainer, .post {
-		margin: auto !important;
-		width: 90% !important;
-	}
-	body {
-		overflow-x: hidden;										
-	}
-	.op>.postMessage {
-	background-color: rgba(21, 22, 24, .9) !important;
-	padding: 2rem !important;
-	width: 90%!important;
-	margin-left: 0px;
-	}
-	.opContainer {
-		margin-bottom: 2em !important;										
-	}
+/* format width of thumbnails */
+.catalog-thumb {
+	max-width: 100% !important;
 }
 
-/*fix the OP weirdness in chrome */
-blockquote.postMessage {
-	-webkit-margin-before: 0 !Important;
-	-webkit-margin-after: 0 !Important;
-	margin-right: -20px !important;
+.opContainer {
+	min-height: 20rem;	
+}
+
+#file-n-submit > input, #qr-draw-button {
+	background: none;
+	cursor: pointer;
 }
