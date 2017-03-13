@@ -216,8 +216,13 @@ width here is set by the media-query below */
 		width: 90vw;										
 	}
 }
-/* style all of em */
 
+/* force box shadows to clear width of children in expanded inline replies */
+.inline>.postContainer {
+	display: inline-table !important;	
+}
+
+/* style all of em */
 .post {
 	background-color: transparent !important;
 	border: none !important;
