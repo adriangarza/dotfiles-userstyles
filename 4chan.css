@@ -322,6 +322,7 @@ input[class="field"]:focus {
 }
 .reply-to-thread {
 	border: none !important;
+	border-radius: 0px !important;
 }
 
 /* 4chanx settings box ================================================ */
