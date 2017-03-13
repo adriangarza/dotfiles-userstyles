@@ -1,4 +1,4 @@
-/* ================== prereqs: Tomorrow theme for 4chan. Works with 4chanX. ======================
+/* ================== prereqs: Tomorrow theme for 4chan. Works with 4chanX. ====================== */
 
 /*  MENU/MISC SITEWIDE STYLING */
 
@@ -9,7 +9,7 @@ body {
 }
 select,
 input {
-	background-color: #333 !important;
+	background-color: #2b2b2d !important;
 	margin: 0px 5px;
 	color: #ccc !important;
 	outline: none !important;
@@ -64,10 +64,20 @@ div.boardTitle {
 	text-shadow: none !important;
 	font-family: "Open Sans" !important;
 	font-weight: 600 !important;
+	font-size: 30pt !important;
 }
+
+/* thread page limit warnings */
 .warning {
 	color: cyan;
 }
+
+/* banner */
+#bannerCnt {
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);	
+	margin-bottom: 1rem;
+}
+
 /*CATALOG STYLING =============================================*/
 
 .navLinks>span:not(#index-options) {
@@ -135,14 +145,13 @@ hr {
 /*style the OP =============================================*/
 
 .thread {
-	margin-top: 5rem !important;
+	margin-top: 2rem !important;
 }
-/* add a gradient bar */
-
+/* add a gradient bar
+width here is set by the media-query below */
 .opContainer:before {
 	content: '';
 	position: absolute;
-	width: 50vw;
 	height: 16px;
 	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
@@ -193,12 +202,18 @@ hr {
 		margin: auto;
 		margin-bottom: 2rem;
 	}
+	.opContainer:before {
+		width: 50vw;										
+	}
 }
 @media(max-width: 1500px) {
 	.postContainer {
 		width: 90vw;
 		margin: auto;
 		margin-bottom: 2rem;
+	}
+	.opContainer:before {
+		width: 90vw;										
 	}
 }
 /* style all of em */
@@ -349,4 +364,33 @@ label{
 /* edit weird box shadow interference */
 :root.tomorrow .suboption-list > div:last-of-type {
 	background-color: transparent;	
+}
+
+/* quick reply smoothing ================================================= */
+#qr-oekaki-button, #url-button, #dump-button {
+	opacity: 0;
+	transition: .1s;
+}
+#qr-oekaki-button:hover, #url-button:hover, #dump-button:hover {
+	opacity: 1;
+}
+
+/* quick reply checkbox and thread # */
+.reply-to-thread>.move>label,.reply-to-thread>.move>select {
+	transition: .2s;
+	opacity: 0;	
+}
+.reply-to-thread>.move>label:hover, .reply-to-thread>.move>select:hover {
+	opacity: 1;	
+}
+
+/* hide captcha */
+.captcha-container>div {
+	opacity: 0;
+	height: 20px !important;
+	transition: .2s;
+}
+.captcha-container>div:hover {
+	opacity: 1;
+	height: 78px !important;
 }
