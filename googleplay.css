@@ -102,7 +102,7 @@ gpm-action-buttons {
 }
 
 .cluster .header .cluster-title {
- 	color: #2b2b2d;   
+ 	color: #ee609c;   
 }
 
 /* PLAY QUEUE ========================== */
@@ -155,8 +155,12 @@ a[data-type="wtc"], a[data-type="wnr"]{
     color: lightgray !important; 
 }
 
-.paper-input-container-0 .focused-line.paper-input-container {
+.paper-input-container-0 .focused-line.paper-input-container, .focused-line {
  	background: #dd609c !important;   
+}
+
+.paper-input-container-2 .add-on-content.is-highlighted.paper-input-container  * {
+    color: #dd609c !important;   
 }
 
 .suggestion {
@@ -239,7 +243,7 @@ th {
 }
 
 #music-content, #mainContainer {
- background-image: url("http://i.imgur.com/SynGRvw.jpg");
+ background-image: url("http://i.imgur.com/BeTM3R8.png");
     background-attachment: fixed;
 }
 
