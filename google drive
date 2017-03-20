@@ -1,0 +1,12 @@
+.kix-cursor {
+ 	transition: .2s;   
+}
+
+#docs-toolbar-wrapper {
+ 	background-image: none;   
+}
+
+.goog-toolbar-button-hover, .goog-toolbar-menu-button-hover {
+ 	box-shadow: none; 
+    background-image: none;
+}
