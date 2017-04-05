@@ -118,6 +118,11 @@ gpm-action-buttons {
  	color: #ee609c;   
 }
 
+.paper-slider-0 .slider-knob-inner.paper-slider {
+ 	background-color: #ee609c !important;
+    border-color: #ee609c !important;
+}
+
 /* PLAY QUEUE ========================== */
 .sj-mini-queue-0 {
  	background-color: #2b2b2d; 
@@ -363,4 +368,20 @@ body.qp .fade-out.gray:after {
 
 .now-playing-menu.goog-menu, .goog-menu {
  	border: none !important;   
+}
+
+.playlist-drop-target>.playlist-wrapper {
+ 	background-color: #3b3b3d !important;
+}
+
+.playlist-drop-target>.playlist-wrapper>.playlist-title {
+ 	color: #ee609c !important;
+}
+
+.paper-dialog-0 {
+ 	color: gray;   
+}
+
+::selection {
+ 	background-color: rgba(238, 60, 156, .2) !important;   
 }
