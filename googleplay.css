@@ -84,7 +84,7 @@ gpm-action-buttons {
 #player {
  	background-color: #2b2b2d;   
 }
-#primaryProgress, #sliderKnobInner {
+#primaryProgress, #sliderKnobInner, .paper-slider-1 .slider-knob-inner.paper-slider {
     background: #ee609c !important;
     border-color:  #ee609c !important;
 }
@@ -109,6 +109,14 @@ gpm-action-buttons {
  	 fill: #2b2b2d;  
 }
 
+
+.paper-slider-1 .slider-knob-inner.paper-slider {
+ 	border: 2px solid #ee609c !Important;   
+}
+
+.paper-slider-1 paper-ripple.paper-slider {
+ 	color: #ee609c;   
+}
 /* PLAYLISTS */
 .paper-toolbar-0 {
  	color: lightgray;   
