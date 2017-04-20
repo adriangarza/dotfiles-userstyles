@@ -1,0 +1,19 @@
+/* works best with Monokai */
+body, select, input {
+ 	background-color: #2b2b2d;
+    color: lightgray;
+    border: none;
+}
+
+button {
+    background-color: #3b3b3d;
+    color: lightgray;
+    border: none;
+ 	cursor: pointer;   
+}
+
+.CodeMirror {
+ 	border: none !important;   
+    outline: none !important;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .5);
+}
