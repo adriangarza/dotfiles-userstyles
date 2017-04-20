@@ -52,6 +52,24 @@ paper-header-panel:not(.has-hero-image), #main {
 .title-text {
  	color: #ee609c   
 }
+
+/* fix the top icons */
+.gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="title"], .gpm-detail-page-header,
+.gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="metadata"],
+.gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="subtitle"],
+.gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="buttons"]{
+ 	color: gray !important;
+}
+
+/* style the new play button next to the playlist header */
+.sj-play-button-1 #buttonContent.sj-play-button {
+    background-color: #ee609c;
+}
+
+.sj-play-button-1 {
+ 	color: #2b2b2d !important;   
+}
+
 .playlist-view .editable:hover {
  	background-color: #3b3b3d;   
 }
