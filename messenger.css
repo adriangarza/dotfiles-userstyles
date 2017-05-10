@@ -138,3 +138,9 @@ span._2jnv {
 ._hh7._aol {
  	border: none !important;   
 }
+    ._2j6 {
+        opacity: 0;
+    }
+    ._2j6:hover {
+        opacity: .5;
+    }
