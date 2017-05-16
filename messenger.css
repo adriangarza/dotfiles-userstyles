@@ -138,9 +138,12 @@ span._2jnv {
 ._hh7._aol {
  	border: none !important;   
 }
-    ._2j6 {
-        opacity: 0;
-    }
-    ._2j6:hover {
-        opacity: .5;
-    }
+
+/* emoji reacts */
+._aou, ._4kf5 {
+ 	background-color:  #14151f !important;  
+}
+
+._o46._3i_m ._ih- {
+ 	background-color: none !important;   
+}
