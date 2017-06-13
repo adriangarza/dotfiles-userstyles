@@ -1,0 +1,461 @@
+/* ==== prereqs: Photon theme for 4chan. Works with 4chanX, best on MacOS.(haven't tested anywhere else) ====== */
+
+/*  MENU/MISC SITEWIDE STYLING */
+
+:root {
+ 	--mainbg: white;
+    --highlight1: #ee609c;
+    --highlight2: purple;
+    --bodycolor: #2b2b2d;
+    --secondbg: white;
+    --maingradient: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+/* fix new things */
+#thread-watcher, #header-bar, :root.photon .dialog {
+ 	background-color: var(--secondbg) !important; 
+}
+
+#thread-watcher, .postContainer {
+ 	border-radius: 2px !important;   
+}
+
+.postContainer {
+ 	max-width: 40rem;   
+}
+
+html, body {
+	font-family: 'Open Sans' !important;
+	background-color: var(--mainbg) !important;
+	background-image: linear-gradient(to bottom, #fad0c4 0%, #fad0c4 1%, #ffd1ff 100%);
+}
+
+html {
+ 	height: 100%;   
+}
+select,
+input {
+	background-color: var(--secondbg) !important;
+	margin: 0px 5px;
+	color: var(--bodycolor) !important;
+	outline: none !important;
+	border: none !important;
+}
+.brackets-wrap::before,
+brackets-wrap::after {
+	content: "" !important;
+}
+.brackets-wrap::after {
+	content: "" !important;
+}
+
+.dialog {
+	border: none;
+}
+
+/* style links */
+a,
+a:visited {
+	text-decoration: none !important;
+	color: var(--highlight1) !important;
+	transition: .2s !important;
+}
+
+.quotelink:hover, .backlink:hover, a:hover {
+ 	border-radius: 2px;
+}
+.quotelink, .backlink, a {
+	text-decoration: none !important;
+	transition: .2s !important;
+	color: #ee609c !important;
+}
+a:not(.catalog-link):hover,
+.quotelink:hover {
+	color: var(--highlight2) !important;
+}
+#thread-watcher {
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	border: none;
+}
+/* add a pretty gradient to the top of the thread watcher */
+
+#thread-watcher>.move:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	top: -10px;
+	left: 0;
+}
+div.boardTitle {
+	color: var(--secondbg);
+	text-shadow: none !important;
+	font-family: "Open Sans" !important;
+	font-weight: 600 !important;
+	font-size: 30pt !important;
+}
+
+/* thread page limit warnings */
+.warning {
+	color: coral;
+}
+
+/* banner */
+#bannerCnt {
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);	
+	margin-bottom: 1rem;
+}
+
+/*CATALOG STYLING =============================================*/
+
+.navLinks {
+    background-color: var(--secondbg);
+	padding: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    display: inline-block;
+    width: 25rem;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navLinks:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(to left, #50cc7f 0%, #f5d100 100%);	top: -10px;
+	left: 0;    
+}
+
+
+#index-options {
+ 	float: none;
+}
+
+.navLinks>span:not(#index-options) {
+	background-color: var(--secondbg) !important;
+	margin-right: 10px;
+    height: 40px;
+}
+#index-options>select {
+	margin-right: 10px;
+    height: 38px;
+}
+#index-search {
+	display: none;
+}
+/* remove update messages */
+/* remove original post starter link */
+
+#blotter,
+#togglePostFormLink {
+	display: none;
+}
+/* style the top menu */
+
+#ctrl {
+	padding: 1rem 5rem;
+}
+/* remove horizontal rules */
+
+hr {
+	border-top: none;
+}
+/* remove catalog options checkbox */
+
+#index-options>input[type="checkbox"] {
+	display: none;
+}
+/* style post containers */
+
+.catalog-thread {
+	margin: 1rem !important;
+	text-align: left !important;
+	background-color: var(--secondbg) !important;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+	border: none;
+	border-bottom: 10px solid transparent !important;
+    border-radius: 2px;
+}
+.catalog-thread:hover {
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.catalog-container {
+	margin: 1rem !important;
+}
+/* THREAD STYLING */
+/* nobody cares about 4chan passes and legal text */
+
+.absBotText,
+.n-pu {
+	display: none !important;
+}
+/*style the OP =============================================*/
+
+.thread {
+	margin-top: 2rem !important;
+}
+/* add a gradient bar
+width here is set by the media-query below */
+.opContainer:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	height: 16px;
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    max-width: 40rem;
+}
+.subject {
+	color: #b465da !important;
+}
+/* style the replies ======================================== */
+/* minimize thread info */
+
+.postInfo>input[type="checkbox"],
+.dateTime,
+.hide-reply-button,
+.navLinksBot,
+.is_thread>.navLinks {
+	display: none;
+}
+/* hide file info unless hovered */
+
+.fileText {
+	opacity: 0;
+	transition: .2s;
+}
+.fileText:hover {
+	opacity: 1;
+}
+/* change the "reply to thread" button at the top, now hidden */
+/* uncomment this to show */
+
+.qr-link-container {
+	display: none;
+}
+.qr-link {
+	background: var(--secondbg) !important;
+	border: none;
+	transition: .1s;
+}
+.qr-link:hover {
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.qr-link:active {
+	background-color: #b465da !important;
+}
+/* center and standardize the posts========================== */
+
+@media(min-width: 1500px) {
+	.postContainer {
+		width: 50vw;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+	.opContainer:before {
+		width: 50vw;										
+	}
+}
+@media(max-width: 1500px) {
+	.postContainer {
+		width: 90vw;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+	.opContainer:before {
+		width: 90vw;										
+	}
+}
+
+/* force box shadows to clear width of children in expanded inline replies */
+.inline>.postContainer {
+	display: inline-table !important;	
+}
+
+/* style all of em */
+.post {
+	background-color: transparent !important;
+	border: none !important;
+	padding: 1rem !important;
+}
+.postContainer {
+	background-color: var(--secondbg);
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+	border-radius: 2px;
+}
+/* fix weirdness with 4chanx hover posts */
+
+.qphl {
+	outline: none !important;
+}
+#qp,
+.inline,
+.inline>.postContainer {
+	border: none !important;
+}
+#qp>.postContainer,
+.inline>.postContainer {
+	margin-bottom: 0px !important;
+	max-width: 25vw !important;
+	min-width: 300px;
+}
+/* add another gradient bar on top of the hover post */
+
+#qp>.postContainer:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+#qp>.postContainer {
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+/* hide bottom options except on hover */
+
+.bottomCtrl {
+	opacity: 0;
+	transition: .2s;
+}
+.bottomCtrl:hover {
+	opacity: 1;
+}
+/* fix posts in catalog =================================== */
+
+.catalog-thread>.postContainer {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+.catalog-post {
+	margin: 0 !important;
+	top: 0px !important;
+}
+/* format width of thumbnails */
+
+.catalog-thumb {
+	max-width: 100% !important;
+}
+.opContainer {
+	min-height: 20rem;
+}
+#file-n-submit > input,
+#qr-draw-button {
+	background: none;
+	cursor: pointer;
+}
+/* style quick reply dialog ====================== */
+
+.field:focus,
+.field,
+input[class="field"],
+input[class="field"]:focus {
+	border: none !important;
+	outline: none;
+	background-color: transparent !important;
+}
+.dialog.focus {
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/* add a gradient ribbon */
+
+.reply-to-thread>.move:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	top: -10px;
+	left: 0;
+}
+.reply-to-thread {
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+/* 4chanx settings box ================================================ */
+/* remove underline from label */
+label{
+	text-decoration: none !important;
+}
+
+/* add spacing between option lines */
+#fourchanx-settings>.section-container>.section-main>fieldset>div, 
+#fourchanx-settings>.section-container>.section-main>fieldset>div>.suboption-list{
+	margin-top: .5rem;
+}
+
+/* remove tree style lines */
+:root.tomorrow #fourchanx-settings fieldset, :root.tomorrow .section-main div::before {
+	border: none;	
+}
+
+/* make the navbar at the top larger, add a shadow */
+#fourchanx-settings>nav {
+	height: 16pt;
+	padding: 3px;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*gradient bar */
+#fourchanx-settings:before {
+	border-radius: 2px 2px 0px 0px;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(to left, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	top: -10px;
+	left: 0;
+}
+
+/* fix some spacing */
+#fourchanx-settings {
+	border: none;
+	padding: 0;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .5);
+}
+
+/* edit weird box shadow interference */
+:root.tomorrow .suboption-list > div:last-of-type {
+	background-color: transparent;	
+}
+
+/* quick reply smoothing ================================================= */
+#qr-oekaki-button, #url-button, #dump-button {
+	opacity: 0;
+	transition: .1s;
+}
+#qr-oekaki-button:hover, #url-button:hover, #dump-button:hover {
+	opacity: 1;
+}
+
+/* quick reply checkbox and thread # */
+.reply-to-thread>.move>label,.reply-to-thread>.move>select {
+	transition: .2s;
+	opacity: 0;	
+}
+.reply-to-thread>.move>label:hover, .reply-to-thread>.move>select:hover {
+	opacity: 1;	
+}
+
+/* hide captcha */
+.captcha-container>div {
+	opacity: 0;
+	height: 20px !important;
+	transition: .2s;
+}
+.captcha-container>div:hover {
+	opacity: 1;
+	height: 78px !important;
+}
