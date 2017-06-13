@@ -1,4 +1,4 @@
-/* ==== prereqs: Photon theme for 4chan. Works with 4chanX, best on MacOS.(haven't tested anywhere else) ====== */
+/* ================== prereqs: Photon theme for 4chan. Works with 4chanX, best on MacOS. ====================== */
 
 /*  MENU/MISC SITEWIDE STYLING */
 
@@ -33,6 +33,24 @@ html, body {
 html {
  	height: 100%;   
 }
+
+body {
+    padding-bottom: 10rem;
+}
+body:after {
+ 	content: ":^)";
+    color: red;
+    display: block;
+    margin: auto;
+    width: 10rem;
+    text-align: center;
+    transform: translateY(4rem);
+}
+
+#bannerCnt {
+ 	margin-top: 5rem;   
+}
+
 select,
 input {
 	background-color: var(--secondbg) !important;
