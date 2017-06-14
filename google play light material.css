@@ -1,0 +1,53 @@
+:root {
+ 	--hi1: #ee609c   
+}
+
+#music-content, #mainContainer {
+ background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-attachment: fixed;
+}
+
+.title-text, .paper-slider-0 paper-ripple.paper-slider, #player-bar-play-pause>iron-icon>svg,
+.paper-slider-1 paper-ripple.paper-slider, .nav-item-container.selected:not([style-scope]):not(.style-scope), .nav-item-container.selected iron-icon:not([style-scope]):not(.style-scope),
+.top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope), .info-card:not([style-scope]):not(.style-scope):not(.szsb-card):not(.add-your-music) paper-button, paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-scope), .ups.light iron-icon:not([style-scope]):not(.style-scope), .upload-dialog-dragover .upload-dialog-description:not([style-scope]):not(.style-scope), paper-dialog .buttons paper-button:not([style-scope]):not(.style-scope):not([disabled]),
+.paper-dialog-0  h2, paper-icon-button.active>iron-icon>svg, .paper-fab-0, #selectionBar, .paper-checkbox-1 #ink[checked].paper-checkbox, .paper-icon-button-0 #ink.paper-icon-button, .title, #mainContainer>h2, .name, .playlist-drop-target>.playlist-wrapper>.playlist-title, .title-text, #player-bar-play-pause>iron-icon>svg,
+.nav-item-container.selected:not([style-scope]):not(.style-scope), .nav-item-container.selected iron-icon:not([style-scope]):not(.style-scope){
+ 	color: var(--hi1) !important;   
+}
+
+primary-background:not([style-scope]):not(.style-scope),
+.sj-play-button-0 #buttonContent.sj-play-button {
+ 	background-color: var(--hi1);   
+}
+
+.sj-play-button-1 #buttonContent.sj-play-button {
+ 	border: none;
+    border-bottom: none;
+}
+
+#primaryProgress, #sliderKnobInner, .paper-slider-1 .slider-knob-inner.paper-slider,
+.paper-slider-0 .slider-knob-inner.paper-slider, #primaryProgress, #sliderKnobInner, .paper-slider-1 .slider-knob-inner.paper-slider {
+    background: var(--hi1) !important;
+    border-color:  var(--hi1) !important;
+}
+
+.paper-slider-1 .slider-knob-inner.paper-slider {
+ 	border: 2px solid var(--hi1) !Important;   
+}
+
+.paper-checkbox-1 #checkbox.checked.paper-checkbox, .paper-slider-0 .slider-knob-inner.paper-slider {
+    background-color: var(--hi1);
+    border-color: var(--hi1);
+}
+
+.floated-label-placeholder, .paper-input {
+    color: #2b2b2d!important; 
+}
+
+.paper-input-container-0 .focused-line.paper-input-container, .focused-line {
+ 	background: #dd609c !important;   
+}
+
+.paper-input-container-2 .add-on-content.is-highlighted.paper-input-container  * {
+    color: #dd609c !important;   
+}
