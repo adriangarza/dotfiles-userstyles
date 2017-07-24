@@ -51,3 +51,7 @@ primary-background:not([style-scope]):not(.style-scope),
 .paper-input-container-2 .add-on-content.is-highlighted.paper-input-container  * {
     color: #dd609c !important;   
 }
+
+#quick-nav-container {
+    display: none !important;
+}
