@@ -55,3 +55,6 @@ primary-background:not([style-scope]):not(.style-scope),
 #quick-nav-container {
     display: none !important;
 }
+.music-logo-link {
+ 	display: none !important;   
+}
