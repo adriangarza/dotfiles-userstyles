@@ -89,10 +89,6 @@ gpm-action-buttons {
  	background-color: #3b3b3d !important;   
 }
 
-.song-indicator {
- 	background-image: url("https://play-music.gstatic.com/fe/4b16dee941dcca9c97b5adb68ae0e157/ani_equalizer_white.gif") !important;   
-}
-
 .song-row td a,
 .song-table [data-col="title"], .song-table.mini [data-col="song-details"] .song-title {
  	color: lightgray !important;   
