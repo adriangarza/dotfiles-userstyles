@@ -411,3 +411,23 @@ body.qp .fade-out.gray:after {
 ::selection {
  	background-color: rgba(238, 60, 156, .2) !important;   
 }
+
+#quick-nav-container {
+    display: none;
+}
+
+.tab-content.style-scope.paper-tab {
+ 	color: gray !important;   
+}
+
+paper-button[aria-disabled="true"] {
+	background-color: rgba(0, 0, 0, 0) !important;   
+}
+
+span[slot="description"] {
+ 	color: gray !important;  
+}
+
+h2.section-header {
+ 	color: #ee609c !important;   
+}
