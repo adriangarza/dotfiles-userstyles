@@ -173,6 +173,7 @@ width here is set by the media-query below */
 .opContainer:before {
 	content: '';
 	position: absolute;
+    width: 50rem !important;
 	height: 16px;
 	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
@@ -219,7 +220,7 @@ width here is set by the media-query below */
 
 @media(min-width: 1500px) {
 	.postContainer {
-		width: 50vw;
+		width: 50rem;
 		margin: auto;
 		margin-bottom: .5rem;
 	}
