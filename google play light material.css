@@ -58,3 +58,7 @@ primary-background:not([style-scope]):not(.style-scope),
 .music-logo-link {
  	display: none !important;   
 }
+
+.paper-button-2 {
+ 	background-color: #ee609c !important;   
+}
