@@ -427,3 +427,7 @@ span[slot="description"] {
 h2.section-header {
  	color: #ee609c !important;   
 }
+
+.paper-button-2 {
+ 	background-color: #ee609c !important;   
+}
