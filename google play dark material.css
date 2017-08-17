@@ -58,7 +58,7 @@ paper-header-panel:not(.has-hero-image), #main {
 .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="metadata"],
 .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="subtitle"],
 .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="buttons"]{
- 	color: gray !important;
+ 	color: #eeeeee !important;
 }
 
 /* style the new play button next to the playlist header */
@@ -430,4 +430,8 @@ h2.section-header {
 
 .paper-button-2 {
  	background-color: #ee609c !important;   
+}
+
+.detail-wrapper *{
+    color: #eeeeee !important;
 }
