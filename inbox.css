@@ -1,0 +1,124 @@
+:root {
+    /* from light to dark */
+	--bg0: #fbf1c7;
+    --bg1: #ebdbb2;
+    --bg2: #d5c4a1;
+    --bg3: #bdae93;
+    --bg4: #a89984;
+    --gry: #928374;
+    --fg4: #7c6f64;
+    --fg3: #665c54;
+    --fg2: #504945;
+    --fg1: #3c3836;
+    --fg0: #282828;
+    
+    /*--2 is the darker variant*/
+    --red:     #cc241d;
+    --red2:    #9d0006;
+    --orange:  #d65d0e;
+    --orange2: #af3a03;
+    --yellow:  #d79921;
+    --yellow2: #b57614;
+    --green:   #98971a;
+    --green2:  #79740e;
+    --aqua:    #689d6a;
+    --aqua2:   #427b58;
+    --blue:    #458588;
+    --blue2:   #076678;
+    --purple:  #b16286;
+    --purple2: #8f3f71;
+}
+
+/* top bar */
+.hn:before {
+ 	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2) !important;
+}
+.b4, .b4 .at {
+ 	background: var(--blue2);   
+}
+
+.b4 .at::before {
+ 	box-shadow: none;   
+}
+
+/* basic container styling */
+/* main body and sidebars */
+body, .lQ {
+    background: var(--bg1);
+    color: var(--fg1);
+    font-weight: 500;
+}
+
+/* inbox items */
+.an {
+	background: var(--bg0);    
+}
+
+/* remove box shadow */
+.aa::before, .an::before {
+ 	box-shadow: none;   
+}
+
+/* highlighted left border on inbox item */
+.scroll-list-item-highlighted>.an:not(.yS)::after, .scroll-list-item-highlighted>.an.D3tecb::after, .scroll-list-item-highlighted>.yS:not(.D3tecb) .hM::after, .scroll-list-item-highlighted>.yS:not(.D3tecb) .G4::after {
+ 	background: var(--blue);   
+}
+
+/* inbox item when expanded */
+.X, .ak, .aa, .ac-P .bJ, .ac-P-bh .bJ, .bc, .br>.bc {
+ 	background: var(--bg0);   
+}
+
+.ap, .bc, .br>.bc {
+ 	border-top: 1px solid var(--bg2);   
+}
+
+.Am {
+ 	border: 1px solid var(--bg3);   
+}
+
+.Am:hover, .Am:focus {
+ 	border: 1px solid var(--blue);
+    color: var(--blue2);
+}
+
+/* send button */
+.dy[disabled] {
+ 	background-color: var(--bg1);   
+}
+
+.qj:not([disabled]) {
+ 	background-color: var(--blue);
+    color: var(--bg1);
+}
+
+.g-W-K, .g-W-aG-K, .g-W-hy-aG-K {
+ 	box-shadow: inset 0 0 0 1px var(--bg2);   
+}
+
+.scroll-list-item.top-level-item * {
+    background-color: var(--bg0);
+}
+
+::selection {
+ 	background: var(--blue);
+    color: var(--bg0);
+}
+
+/* hover info */ 
+#Rgw69b {
+	background-color: var(--bg0);
+    color: var(--fg0);
+}
+
+.l3 {
+ 	color: var(--fg3);   
+}
+
+
+
+
+
+
+
+
