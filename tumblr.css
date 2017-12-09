@@ -172,3 +172,11 @@ a.post_control.post_control-icon.reblog.reblogged::before {
 .post_answer_form_field:after {
 	display: none !important;	
 }
+
+.chat_line {
+	background-color: rgba(0, 0, 0, 0) !important;		
+}
+
+.post_permalink {
+	border-color: #2b2b2d !important;
+}
