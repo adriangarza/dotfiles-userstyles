@@ -435,3 +435,7 @@ h2.section-header {
 .detail-wrapper *{
     color: #eeeeee !important;
 }
+
+.paper-tabs-1 #selectionBar.paper-tabs {
+ 	border-bottom: 2px solid #ee609c 
+}
