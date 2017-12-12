@@ -175,6 +175,7 @@ a.post_control.post_control-icon.reblog.reblogged::before {
 
 .chat_line {
 	background-color: rgba(0, 0, 0, 0) !important;		
+    font-family: "Roboto Mono", monospace;
 }
 
 .post_permalink {
