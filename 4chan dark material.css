@@ -3,7 +3,8 @@
 /*  MENU/MISC SITEWIDE STYLING */
 
 body {
-	font-family: 'Open Sans' !important;
+	font-family: 'Roboto' !important;
+	font-size: 11pt;
 	background-image: url("http://i.imgur.com/SynGRvw.jpg");
 	background-attachment: fixed;
 }
@@ -25,6 +26,10 @@ brackets-wrap::after {
 
 .dialog {
 	border: none;
+}
+
+.boardBanner {
+	display: none;
 }
 
 /* style links */
@@ -201,6 +206,27 @@ width here is set by the media-query below */
 }
 /* change the "reply to thread" button at the top, now hidden */
 /* uncomment this to show */
+
+/* style bottom backlink/reply container */
+.post > .container{
+	font-size: 90%;
+	padding-top: 1rem;
+	border-top: 1px solid #3d3d3e;
+	display: block;
+}
+div.reply {
+	display: block;
+}
+.post > .container:empty {
+	display: none;
+}
+.container > a {
+	margin-right: .5rem;
+}
+
+.inline .postContainer {
+	padding: 1rem;
+}
 
 .qr-link-container {
 	display: none;
