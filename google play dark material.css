@@ -439,3 +439,7 @@ h2.section-header {
 .paper-tabs-1 #selectionBar.paper-tabs {
  	border-bottom: 2px solid #ee609c 
 }
+
+.top-charts-view:not([style-scope]):not(.style-scope) .song-row:not([style-scope]):not(.style-scope) [data-col="index"]:not([style-scope]):not(.style-scope) .column-content:not([style-scope]):not(.style-scope), paper-toast:not([style-scope]):not(.style-scope) paper-button[data-action="button"]:not([style-scope]):not(.style-scope), .ups.light:not([style-scope]):not(.style-scope) iron-icon:not([style-scope]):not(.style-scope), .upload-dialog-dragover:not([style-scope]):not(.style-scope) .upload-dialog-description:not([style-scope]):not(.style-scope), paper-dialog:not([style-scope]):not(.style-scope) .buttons:not([style-scope]):not(.style-scope) paper-button:not([style-scope]):not(.style-scope):not([disabled]) {
+	color: #ee609c !important;
+}
