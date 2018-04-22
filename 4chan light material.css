@@ -21,11 +21,13 @@
 }
 
 .postContainer {
- 	max-width: 40rem;   
+ 	max-width: 50rem;   
 }
 
 html, body {
-	font-family: 'Open Sans' !important;
+	font-family: 'Roboto' !important;
+	font-size: 11pt;
+	color: var(--bodycolor) !important;
 	background-color: var(--mainbg) !important;
 	background-image: linear-gradient(to bottom, #fad0c4 0%, #fad0c4 1%, #ffd1ff 100%);
 }
@@ -227,7 +229,7 @@ width here is set by the media-query below */
 	position: absolute;
 	height: 16px;
 	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    max-width: 40rem;
+    max-width: 50rem;
 }
 .subject {
 	color: #b465da !important;
