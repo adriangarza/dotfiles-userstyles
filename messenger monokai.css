@@ -460,3 +460,11 @@ background-color: #1e1e1e;
 .fbNubFlyoutAttachments {
 	display: none;
 }
+
+blockquote._pye span span {
+	color: #789942;
+}
+
+blockquote._pye  > ._pyf {
+	background-color: #789942 !important;
+}
