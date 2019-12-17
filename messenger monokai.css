@@ -468,3 +468,12 @@ blockquote._pye span span {
 blockquote._pye  > ._pyf {
 	background-color: #789942 !important;
 }
+
+/*so and so replied to so and so*/
+._3egs {
+	background: none;
+}
+
+._4k7a {
+	color: rgba(255, 255, 255, 0.3);
+}
