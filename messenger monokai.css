@@ -461,14 +461,6 @@ background-color: #1e1e1e;
 	display: none;
 }
 
-blockquote._pye span span {
-	color: #789942;
-}
-
-blockquote._pye  > ._pyf {
-	background-color: #789942 !important;
-}
-
 /*so and so replied to so and so*/
 ._3egs {
 	background: none;
